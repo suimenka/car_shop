@@ -348,7 +348,16 @@
             <h2>お 問 い 合 わ せ</h2>
           </div>
           <div class="contact">
-            <form method="POST" netlify>
+            <form
+              name="contact"
+              method="post"
+              action=""
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="contact" />
+
               <label for="name">お名前（漢字）*</label
               ><input id="name" type="text" required />
               <label for="nameh"
@@ -362,8 +371,8 @@
               /></label>
               <label for="mail"
                 >メールアドレス*<input
-                  id="mail"
-                  type="mail"
+                  id="email"
+                  type="email"
                   value
                   pattern="[\w\-._]+@[\w\-._]+\.[A-Za-z]+"
                   title="〇〇@〇〇.〇〇の型でご入力下さい"
