@@ -358,57 +358,33 @@
               <input type="hidden" name="bot-field" />
               <input type="hidden" name="form-name" value="contact" />
 
-              <label for="name">お名前（漢字）*</label
-              ><input id="name" type="text" required />
-              <label for="nameh"
-                >お名前（フリガナ）*<input
-                  id="nameh"
-                  type="text"
-                  value
-                  pattern="[ァ-ヴー\s　]+"
-                  title="カタカナ"
-                  required
-              /></label>
-              <label for="mail"
-                >メールアドレス*<input
-                  id="email"
-                  type="email"
-                  value
-                  pattern="[\w\-._]+@[\w\-._]+\.[A-Za-z]+"
-                  title="〇〇@〇〇.〇〇の型でご入力下さい"
-                  required
-              /></label>
-
-              <div class="radiob">
-                <p>お問い合わせ内容をお選び下さい*</p>
-                <label
-                  >整備・車検<input
-                    type="radio"
-                    name="menu"
-                    value="mainte"
+              <dl>
+                <dt><label for="name">お名前</label></dt>
+                <dd><input type="text" id="name" name="name" required /></dd>
+                <dt><label for="email">メールアドレス</label></dt>
+                <dd><input type="email" id="email" name="email" required /></dd>
+                <dt><label>お問い合わせの種類</label></dt>
+                <dd class="selectbox">
+                  <select name="item">
+                    <option value="">お問い合わせの種類をご選択ください</option>
+                    <option value="購入">購入</option>
+                    <option value="整備・点検">整備・点検</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </dd>
+                <dt><label>メッセージ</label></dt>
+                <dd>
+                  <textarea
+                    name="message"
+                    cols="40"
+                    rows="10"
                     required
-                /></label>
-                <label
-                  >購入<input type="radio" name="menu" value="buy"
-                /></label>
-                <label
-                  >保険<input type="radio" name="menu" value="insurance"
-                /></label>
-                <label
-                  >その他<input type="radio" name="menu" value="etc"
-                /></label>
+                  ></textarea>
+                </dd>
+              </dl>
+              <div class="btn">
+                <button type="submit" class="submit-btn">送信</button>
               </div>
-
-              <label for="message"
-                >メッセージ*<textarea
-                  name=""
-                  id="message"
-                  cols="40"
-                  rows="5"
-                  required
-                ></textarea>
-              </label>
-              <button>送　信</button>
             </form>
           </div>
         </div>

@@ -320,7 +320,8 @@ header nav ul a .titlee {
   background-color: #fff;
 }
 
-.company table th, .company table td {
+.company table th,
+.company table td {
   border: 1px solid #a7a7a7;
   padding: 20px;
 }
@@ -344,7 +345,8 @@ header nav ul a .titlee {
   background-color: #faf4e2;
 }
 
-.mainte table th, .mainte table td {
+.mainte table th,
+.mainte table td {
   border: 1px solid #a7a7a7;
   padding: 20px;
 }
@@ -427,7 +429,7 @@ header nav ul a .titlee {
   /*フォントサイズ*/
   background: #fa5050;
   /*背景色*/
-  color: #FFF;
+  color: #fff;
   /*文字色*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -436,16 +438,16 @@ header nav ul a .titlee {
 .sale .car_view .ribbon2 h3 {
   margin: 0;
   padding: 0 30px;
-  border-top: dashed 1px #FFF;
+  border-top: dashed 1px #fff;
   /*上の破線*/
-  border-bottom: dashed 1px #FFF;
+  border-bottom: dashed 1px #fff;
   /*下の破線*/
   line-height: 46px;
 }
 
 .sale .car_view .ribbon2:before, .sale .car_view .ribbon2:after {
   position: absolute;
-  content: '';
+  content: "";
   width: 0px;
   height: 0px;
   z-index: 1;
@@ -576,6 +578,10 @@ header nav ul a .titlee {
   line-height: 16px;
 }
 
+.contact form .radiob label:hover {
+  cursor: pointer;
+}
+
 .contact form .radiob input {
   width: 10%;
   margin: 0;
@@ -594,6 +600,7 @@ header nav ul a .titlee {
 }
 
 .contact form button:hover {
+  cursor: pointer;
   background: #1aab8a;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
