@@ -167,78 +167,9 @@ header nav ul a .titlee {
   }
 }
 
-.firstview {
-  padding-top: 70px;
-  width: 100%;
-  height: 650px;
-  background-image: url("img/3499604_m.jpg");
-  position: relative;
-  z-index: 10;
-}
-
-.firstview .firstview_new {
-  width: 60%;
-  background: #fff;
-  opacity: 0.8;
-  margin: 20px 0 0 20px;
-  z-index: 30;
-}
-
-.firstview .firstview_new h2.new_title {
-  font-size: 16px;
-  margin: 15px;
-}
-
-.firstview .firstview_new h2.new_title span {
-  display: block;
-  height: 50px;
-  border-bottom: 3px solid #ffd20a;
-  line-height: 50px;
-}
-
-.firstview .firstview_new dl {
-  width: auto;
-  padding: 0 10px 10px 10px;
-  margin-top: 0;
-  margin-left: 20px;
-}
-
-.firstview .firstview_new dl .kizi {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  border-bottom: 1px solid #dcdcdc;
-  padding-bottom: 10px;
-}
-
-.firstview .firstview_new dl .kizi dt {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 20%;
-  padding: 10px 0;
-  font-size: 13px;
-  font-weight: bold;
-}
-
-.firstview .firstview_new dl .kizi dd {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 80%;
-  margin-left: 0;
-  padding: 10px 10px 0 0;
-  font-size: 13px;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
 .sub_title {
   text-align: center;
+  padding: 90px 0 40px;
 }
 
 .sub_title h2 {
@@ -246,8 +177,8 @@ header nav ul a .titlee {
   color: #158b2b;
   font-size: 25px;
   padding: 10px 0;
+  margin: 0;
   text-align: center;
-  margin: 50px 0;
 }
 
 .sub_title h2:before {
@@ -265,7 +196,11 @@ header nav ul a .titlee {
   transform: translateX(-50%);
 }
 
-.contents {
+.sub_title.top {
+  padding: 100px 0 30px;
+}
+
+.firstview {
   width: 1000px;
   height: auto;
   display: -webkit-box;
@@ -274,10 +209,10 @@ header nav ul a .titlee {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
-.contents .sub_image {
+.firstview .main_image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -288,51 +223,272 @@ header nav ul a .titlee {
   margin-right: 10px;
 }
 
-.contents .sub_image img {
+.firstview .main_image img {
   width: 310px;
   height: 230px;
   border-radius: 10px;
   opacity: 0.8;
 }
 
-.contents .sub_image .inner {
+.firstview .main_image .inner {
   width: auto;
   height: 15px;
   padding: 10px;
   text-align: center;
 }
 
-.contents .sub_image .inner p {
+.firstview .main_image .inner p {
   margin: 0;
   font-size: 15px;
   line-height: 15px;
 }
 
-.company {
-  padding-top: 20px;
+.firstview_new {
   width: 1000px;
-  margin: auto;
+  height: auto;
+  margin: 0 auto;
+  background: #fff;
 }
 
-.company table {
+.firstview_new h2.new_title {
+  font-size: 16px;
+  margin: 15px;
+}
+
+.firstview_new h2.new_title span {
+  display: block;
+  height: 50px;
+  border-bottom: 3px solid #ffd20a;
+  line-height: 50px;
+}
+
+.firstview_new dl {
+  width: auto;
+  padding: 0 10px 10px 10px;
+}
+
+.firstview_new dl .kizi {
   width: 100%;
-  border-collapse: collapse;
-  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 10px;
 }
 
-.company table th,
-.company table td {
-  border: 1px solid #a7a7a7;
-  padding: 20px;
+.firstview_new dl .kizi dt {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 20%;
+  padding: 10px 0 0 10px;
+  font-size: 13px;
+  font-weight: bold;
 }
 
-.company table th {
-  background-color: #faf4e2;
-  border-left: 5px solid #ffd20a;
+.firstview_new dl .kizi dd {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 80%;
+  margin-left: 0;
+  padding: 10px 10px 0 0;
+  font-size: 13px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.map {
+.joycal {
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff;
+  padding: 10px;
+}
+
+.joycal ul {
+  padding-left: 0;
+  margin: 20px 0 0 0;
+}
+
+.joycal ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+}
+
+.joycal ul li .photo,
+.joycal ul li .txt {
+  width: 50%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.joycal ul li .photo h3,
+.joycal ul li .txt h3 {
+  border-bottom: 2px dotted #000;
+  font-size: 20px;
+}
+
+.joycal ul li img {
+  width: 400px;
+}
+
+/* 奇数の行に対して指定 */
+ul li:nth-child(odd) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+/* 必要に応じて余白つけてください */
+ul li:nth-child(odd) .txt {
+  padding-right: 10px;
+}
+
+ul li:nth-child(even) .txt {
+  padding-left: 10px;
+}
+
+.osusume {
+  width: 1000px;
+  margin: 80px auto 0;
+  text-align: center;
+}
+
+.osusume .ribbon2 {
   margin-top: 20px;
+  display: inline-block;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  padding: 7px 0;
+  font-size: 18px;
+  /*フォントサイズ*/
+  background: #fa5050;
+  /*背景色*/
+  color: #fff;
+  /*文字色*/
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.osusume .ribbon2 h3 {
+  margin: 0;
+  padding: 0 30px;
+  border-top: dashed 1px #fff;
+  /*上の破線*/
+  border-bottom: dashed 1px #fff;
+  /*下の破線*/
+  line-height: 46px;
+}
+
+.osusume .ribbon2:before, .osusume .ribbon2:after {
+  position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+.osusume .ribbon2:before {
+  /*左端の山形*/
+  top: 0;
+  left: 0;
+  border-width: 30px 0px 30px 15px;
+  border-color: transparent transparent transparent #f6f6f6;
+  border-style: solid;
+}
+
+.osusume .ribbon2:after {
+  /*右端の山形*/
+  top: 0;
+  right: 0;
+  border-width: 30px 15px 30px 0px;
+  border-color: transparent #f6f6f6 transparent transparent;
+  border-style: solid;
+}
+
+.osusume ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  margin: 20px 0 0 0;
+}
+
+.osusume li {
+  border: 2px solid #dcdcdc;
+  background-color: #fff;
+  border-radius: 8px;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.osusume img {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+
+.osusume .car_content {
+  padding: 10px 20px;
+}
+
+.osusume .car_content h3 {
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.osusume .car_content p {
+  font-size: 14px;
+}
+
+.osusume .car_content .hm {
+  color: #eb3b3b;
+}
+
+.osusume .car_content .seven_max {
+  color: #19bb37;
+}
+
+.osusume .car_content .mitumori {
+  display: inline-block;
+  font-size: 15px;
+  text-align: right;
+  text-decoration: none;
+  border-bottom: dashed 1px black;
+  color: black;
+  cursor: pointer;
+}
+
+.osusume .car_content .mitumori:hover {
+  color: #eb3b3b;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  border-bottom: dashed 1px #eb3b3b;
+}
+
+.osusume a {
+  font-size: 12px;
+}
+
+.mainte {
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .mainte table {
@@ -360,183 +516,30 @@ header nav ul a .titlee {
   color: #ffd20a;
 }
 
-.sale {
-  text-align: center;
-  /* 奇数の行に対して指定 */
-  /* 必要に応じて余白つけてください */
+.company {
+  width: 1000px;
+  margin: auto;
 }
 
-.sale .joycal {
-  background: #fff;
-  padding: 10px;
-}
-
-.sale .joycal ul {
-  padding-left: 0;
-}
-
-.sale .joycal ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 20px 0;
-}
-
-.sale .joycal ul li .photo,
-.sale .joycal ul li .txt {
-  width: 50%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.sale .joycal ul li .photo h3,
-.sale .joycal ul li .txt h3 {
-  border-bottom: 2px dotted #000;
-  font-size: 20px;
-}
-
-.sale .joycal ul li img {
-  width: 400px;
-}
-
-.sale ul li:nth-child(odd) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-}
-
-.sale ul li:nth-child(odd) .txt {
-  padding-right: 10px;
-}
-
-.sale ul li:nth-child(even) .txt {
-  padding-left: 10px;
-}
-
-.sale .car_view .ribbon2 {
-  margin-top: 20px;
-  display: inline-block;
-  position: relative;
-  height: 60px;
-  line-height: 60px;
-  text-align: center;
-  padding: 7px 0;
-  font-size: 18px;
-  /*フォントサイズ*/
-  background: #fa5050;
-  /*背景色*/
-  color: #fff;
-  /*文字色*/
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.sale .car_view .ribbon2 h3 {
-  margin: 0;
-  padding: 0 30px;
-  border-top: dashed 1px #fff;
-  /*上の破線*/
-  border-bottom: dashed 1px #fff;
-  /*下の破線*/
-  line-height: 46px;
-}
-
-.sale .car_view .ribbon2:before, .sale .car_view .ribbon2:after {
-  position: absolute;
-  content: "";
-  width: 0px;
-  height: 0px;
-  z-index: 1;
-}
-
-.sale .car_view .ribbon2:before {
-  /*左端の山形*/
-  top: 0;
-  left: 0;
-  border-width: 30px 0px 30px 15px;
-  border-color: transparent transparent transparent #f6f6f6;
-  border-style: solid;
-}
-
-.sale .car_view .ribbon2:after {
-  /*右端の山形*/
-  top: 0;
-  right: 0;
-  border-width: 30px 15px 30px 0px;
-  border-color: transparent #f6f6f6 transparent transparent;
-  border-style: solid;
-}
-
-.sale .car_view ul {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-  margin: 20px 0 40px 0;
-}
-
-.sale .car_view li {
-  border: 2px solid #dcdcdc;
-  background-color: #fff;
-  border-radius: 8px;
-  width: 32%;
-  margin-bottom: 20px;
-}
-
-.sale .car_view img {
+.company table {
   width: 100%;
-  border-radius: 8px 8px 0 0;
+  border-collapse: collapse;
+  background-color: #fff;
 }
 
-.sale .car_view .car_content {
-  padding: 10px 20px;
+.company table th,
+.company table td {
+  border: 1px solid #a7a7a7;
+  padding: 20px;
 }
 
-.sale .car_view .car_content h3 {
-  font-weight: normal;
-  letter-spacing: 1px;
+.company table th {
+  background-color: #faf4e2;
+  border-left: 5px solid #ffd20a;
 }
 
-.sale .car_view .car_content p {
-  font-size: 14px;
-}
-
-.sale .car_view .car_content .hm {
-  color: #eb3b3b;
-}
-
-.sale .car_view .car_content .seven_max {
-  color: #19bb37;
-}
-
-.sale .car_view .car_content .mitumori {
-  display: inline-block;
-  font-size: 15px;
-  text-align: right;
-  text-decoration: none;
-  border-bottom: dashed 1px black;
-  color: black;
-  cursor: pointer;
-}
-
-.sale .car_view .car_content .mitumori:hover {
-  color: #eb3b3b;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  border-bottom: dashed 1px #eb3b3b;
-}
-
-.sale .car_view a {
-  font-size: 12px;
+.map {
+  margin-top: 20px;
 }
 
 .contact {
@@ -549,7 +552,8 @@ header nav ul a .titlee {
 }
 
 .contact form input,
-.contact form textarea {
+.contact form textarea,
+.contact form select {
   width: 100%;
   background: #eaebeb;
   border-style: none;
@@ -557,7 +561,8 @@ header nav ul a .titlee {
   font-size: 16px;
 }
 
-.contact form input {
+.contact form input,
+.contact form select {
   height: 40px;
   margin-bottom: 30px;
 }
@@ -566,25 +571,8 @@ header nav ul a .titlee {
   margin-bottom: 30px;
 }
 
-.contact form .radiob {
-  margin-bottom: 30px;
-}
-
-.contact form .radiob p {
-  font-size: 16px;
-}
-
-.contact form .radiob label {
-  line-height: 16px;
-}
-
-.contact form .radiob label:hover {
-  cursor: pointer;
-}
-
-.contact form .radiob input {
-  width: 10%;
-  margin: 0;
+.contact form select {
+  width: 50%;
 }
 
 .contact form button {
