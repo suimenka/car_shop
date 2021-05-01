@@ -1,4 +1,5 @@
 // 実装予定→ハンバーガーメニューをページ内リンクで非表示にする
+// 実装予定→TOPへ戻るボタン
 
 body {
   background-color: #f6f6f6;
@@ -8,6 +9,25 @@ body {
 
   margin: 0;
   color: #515151;
+
+  .page-top {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    padding: 10px;
+    background: #61c5bb;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font-size: 12px;
+    -ms-filter: "alpha(opacity=80)";
+    -moz-opacity: 0.8;
+    -khtml-opacity: 0.8;
+    opacity: 0.8;
+
+    color: #fff;
+    text-decoration: none;
+  }
 }
 
 // ヘッダー

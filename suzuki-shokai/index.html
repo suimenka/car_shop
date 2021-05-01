@@ -9,8 +9,26 @@
       href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
       rel="stylesheet"
     />
+    <script type="text/javascript">
+      $(function() {
+          var pageTop = $('.page-top');
+          pageTop.hide();
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 600) {
+                  pageTop.fadeIn();
+              } else {
+                  pageTop.fadeOut();
+              }
+          });
+          pageTop.click(function () {
+              $('body, html').animate({scrollTop:0}, 500, 'swing');
+              return false;
+          });
+      });
+      </script>
   </head>
   <body>
+    <a href="#" class="page-top">PAGE TOP ▲</a>
     <div class="wrapper">
       <header>
         <div class="header_wrapper">

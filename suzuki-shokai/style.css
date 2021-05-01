@@ -6,6 +6,24 @@ body {
   color: #515151;
 }
 
+body .page-top {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  padding: 10px;
+  background: #61c5bb;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-size: 12px;
+  -ms-filter: "alpha(opacity=80)";
+  -moz-opacity: 0.8;
+  -khtml-opacity: 0.8;
+  opacity: 0.8;
+  color: #fff;
+  text-decoration: none;
+}
+
 header {
   width: 100%;
   position: fixed;
