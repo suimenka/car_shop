@@ -18,6 +18,23 @@
             <a href=""><h1>株式会社 鈴木商会<span>ジョイカル美濃加茂店</span></h1></a>
           </div>
 
+          <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <div class="menu-content">
+              <ul>
+                <li><a href="#sale">車両販売</a></li>
+                <li><a href="#mainte">整備・点検</a></li>
+                <li><a href="#company">会社概要</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+              </ul>
+              <div class="tel_time">
+                <p class="tel"><i class="fas fa-phone-alt"></i> 0574-25-2368</p>
+                <p class="time">営業時間 9:00～18:00 <span>日月 定休</span></p>
+              </div>
+            </div>
+          </div>
+
           <nav>
             <ul>
               <li>
@@ -62,7 +79,8 @@
 
       <div class="osusume">
         <div class="ribbon2">
-          <h3>今月の鈴木商会オススメの新車はこちら！</h3>
+          <h3 class="pc_osusume">今月の鈴木商会オススメの新車はこちら！</h3>
+          <h3 class="mb_osusume">今月のオススメはこちら！</h3>
         </div>
 
         <ul>
@@ -110,7 +128,7 @@
         </ul>
       </div>
 
-      <div class="firstview_new">
+      <div class="new">
         <h2 class="new_title"><span>新着情報</span></h2>
         <dl>
           <div class="kizi">
@@ -175,7 +193,7 @@
         <h2>整 備 料 金 表</h2>
       </div>
       <div class="mainte">
-        <table>
+        <table class="lista">
           <thead>
             <tr>
               <th>内容</th>
@@ -228,24 +246,24 @@
         <div class="sub_title">
           <h2>点 検・車 検</h2>
         </div>
-          <table>
+          <table class="listb">  
             <thead>
               <tr>
                 <th>内容</th>
                 <th>目安時間</th>
-                <th>料金</th>
+                <th>料金(税込)</th>
               </tr>
             </thead>
             <tr>
               <td>6ヶ月点検</td>
               <td>約20分</td>
-              <td>無料<br />※当社にてご購入の新車のみ</td>
+              <td>無料<br>※当社にてご購入の新車のみ</td>
             </tr>
             <tr>
               <td>12ヶ月点検</td>
               <td>約3時間</td>
               <td>
-                7,700円〜(軽)<br />8,800円〜(小型)<br />9,900円〜(3ナンバー)<br />※上記に加え、別途整備代が必要となります
+                7,700円〜(軽)<br>8,800円〜(小型)<br>9,900円〜(3ナンバー)<br>※上記に加え、別途整備代が必要となります
               </td>
             </tr>
             <tr>
@@ -260,13 +278,14 @@
         </div>
 
         <div class="sub_title" id="company">
-          <h2>創業66年。鈴木商会は地域に密着したお店です</h2>
+          <h2>会 社 概 要</h2>
         </div>
-        <div class="firstview">
+        <div class="company_wrap">
+        <div class="company_one">
           <div class="main_image">
             <div class="inner">
               <p>
-                <i class="fas fa-check-circle"></i> 美濃加茂市役所すぐ側のお店です
+                <i class="fas fa-check-circle"></i> 創業66年！美濃加茂市役所すぐ側です
               </p>
             </div>
             <img src="img/main.png" alt="メイン画像" />
@@ -292,7 +311,7 @@
           </div>
         </div>
 
-        <div class="company">
+        <div class="company_two">
           <table>
             <tr>
               <th>会社名</th>
@@ -330,6 +349,9 @@
               <td>0574-25-2564</td>
             </tr>
           </table>
+        </div>
+      </div>
+
 
           <div class="map">
             <iframe
@@ -381,7 +403,7 @@
                 </dd>
               </dl>
               <div class="btn">
-                <button type="submit" class="submit-btn">送信</button>
+                <button type="submit" class="submit-btn">送　信</button>
               </div>
             </form>
           </div>
