@@ -152,10 +152,11 @@ header nav ul a .titlee {
   font-weight: bold;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 499px) {
   header {
-    width: 100%;
     padding-top: 0;
+    height: 60px;
+    padding-left: 20px;
   }
   header .header_wrapper {
     width: 100%;
@@ -169,6 +170,9 @@ header nav ul a .titlee {
     text-align: center;
   }
   header .header_wrapper nav {
+    display: none;
+  }
+  header .header_wrapper nav ul li {
     display: none;
   }
   header .header_wrapper .header_r {
@@ -193,6 +197,21 @@ header nav ul a .titlee {
   }
   header .header_wrapper .tel_time .time span {
     color: red;
+  }
+  header .hamburger-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header .header_wrapper .header_title h1 {
+    font-size: 20px;
+  }
+  header .header_wrapper .header_r .tel {
+    font-size: 20px;
+  }
+  header nav {
+    margin-left: 20px;
   }
 }
 
@@ -312,20 +331,7 @@ header nav ul a .titlee {
   /*メニューを画面内へ*/
 }
 
-@media screen and (max-width: 375px) {
-  header {
-    height: 60px;
-    padding-left: 20px;
-  }
-  header nav ul li {
-    display: none;
-  }
-  header .hamburger-menu {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
   .hamburger-menu {
     display: none;
   }
@@ -471,7 +477,7 @@ header nav ul a .titlee {
   color: #19bb37;
 }
 
-.osusume .car_content .mitumori {
+.osusume .car_content .mitumori a {
   display: inline-block;
   font-size: 15px;
   text-align: right;
@@ -481,7 +487,7 @@ header nav ul a .titlee {
   cursor: pointer;
 }
 
-.osusume .car_content .mitumori:hover {
+.osusume .car_content .mitumori a:hover {
   color: #eb3b3b;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -492,7 +498,7 @@ header nav ul a .titlee {
   font-size: 12px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 499px) {
   .osusume {
     width: auto;
     margin: 80px 10px 0 10px;
@@ -578,7 +584,7 @@ header nav ul a .titlee {
           justify-content: flex-end;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 499px) {
   .new {
     width: auto;
     margin: 0 10px;
@@ -596,14 +602,14 @@ header nav ul a .titlee {
 }
 
 .joycal {
-  width: 1000px;
+  width: 980px;
   margin: 0 auto;
   text-align: center;
-  background: #fff;
   padding: 10px;
 }
 
 .joycal ul {
+  background: #fff;
   padding-left: 0;
   margin: 20px 0 0 0;
 }
@@ -652,7 +658,7 @@ header nav ul a .titlee {
   width: 80%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 499px) {
   .joycal {
     width: auto;
     margin: 0 10px;
@@ -712,7 +718,7 @@ header nav ul a .titlee {
   border-bottom: 1px dashed #000;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 499px) {
   .mainte {
     width: auto;
     margin: 0 10px;
@@ -758,8 +764,13 @@ header nav ul a .titlee {
   }
 }
 
-.company_wrap .company_one {
+.company_wrap {
   width: 1000px;
+  margin: 0 auto;
+}
+
+.company_wrap .company_one {
+  width: 100%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,7 +813,7 @@ header nav ul a .titlee {
 }
 
 .company_wrap .company_two {
-  width: 1000px;
+  width: 100%;
   margin: auto;
 }
 
@@ -822,7 +833,7 @@ header nav ul a .titlee {
   background-color: #fcf9e6;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 499px) {
   .company_wrap {
     width: auto;
     margin: 0 10px;
@@ -865,7 +876,7 @@ header nav ul a .titlee {
   text-align: center;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 499px) {
   .map {
     width: auto;
   }
@@ -875,12 +886,13 @@ header nav ul a .titlee {
 }
 
 .contact {
-  width: 700px;
+  width: 1000px;
   margin: 30px auto;
 }
 
 .contact form {
-  width: auto;
+  width: 700px;
+  margin: 0 auto;
 }
 
 .contact form input,
@@ -927,7 +939,7 @@ header nav ul a .titlee {
           transition-duration: 0.3s;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 499px) {
   .contact {
     width: auto;
     margin: 0 10px;
@@ -1033,7 +1045,7 @@ footer p.copy {
   font-size: 13px;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 499px) {
   footer {
     width: auto;
     height: auto;

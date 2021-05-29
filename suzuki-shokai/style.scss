@@ -1,5 +1,4 @@
 // 実装予定→ハンバーガーメニューをページ内リンクで非表示にする
-// 実装予定→TOPへ戻るボタン
 
 body {
   background-color: #f6f6f6;
@@ -150,17 +149,14 @@ header {
   }
 
   // ヘッダーレスポンシブ
-  @media screen and (max-width: 375px) {
-    width: 100%;
+  @media screen and (max-width: 499px) {
     padding-top: 0;
+    height: 60px;
+    padding-left: 20px;
 
     .header_wrapper {
       width: 100%;
       display: block;
-      // justify-content: left;
-      // align-items: left;
-      // height: auto;
-      // flex-direction: column;
 
       .header_title {
         width: 70%;
@@ -172,6 +168,9 @@ header {
 
       nav {
         display: none;
+        ul li {
+          display: none;
+        }
       }
 
       .header_r {
@@ -202,6 +201,30 @@ header {
           }
         }
       }
+    }
+    .hamburger-menu {
+      // width: auto;
+      display: block;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  header {
+    .header_wrapper {
+      .header_title {
+        // margin-left: 20px;
+        h1 {
+          font-size: 20px;
+        }
+      }
+      .header_r {
+        .tel {
+          font-size: 20px;
+        }
+      }
+    }
+    nav {
+      margin-left: 20px;
     }
   }
 }
@@ -300,23 +323,7 @@ header {
   left: 0; /*メニューを画面内へ*/
 }
 
-@media screen and (max-width: 375px) {
-  header {
-    height: 60px;
-    padding-left: 20px;
-
-    nav ul li {
-      display: none;
-    }
-
-    .hamburger-menu {
-      // width: auto;
-      display: block;
-    }
-  }
-}
-
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 500px) {
   .hamburger-menu {
     display: none;
   }
@@ -453,18 +460,20 @@ header {
     }
 
     .mitumori {
-      display: inline-block;
-      font-size: 15px;
-      text-align: right;
-      text-decoration: none;
-      border-bottom: dashed 1px black;
-      color: black;
-      cursor: pointer;
+      a {
+        display: inline-block;
+        font-size: 15px;
+        text-align: right;
+        text-decoration: none;
+        border-bottom: dashed 1px black;
+        color: black;
+        cursor: pointer;
 
-      &:hover {
-        color: #eb3b3b;
-        transition-duration: 0.5s;
-        border-bottom: dashed 1px #eb3b3b;
+        &:hover {
+          color: #eb3b3b;
+          transition-duration: 0.5s;
+          border-bottom: dashed 1px #eb3b3b;
+        }
       }
     }
   }
@@ -473,7 +482,7 @@ header {
     font-size: 12px;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 499px) {
     width: auto;
     margin: 80px 10px 0 10px;
 
@@ -549,7 +558,7 @@ header {
     }
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 499px) {
     width: auto;
     margin: 0 10px;
 
@@ -572,13 +581,14 @@ header {
 
 // ジョイカル説明
 .joycal {
-  width: 1000px;
+  width: 980px;
   margin: 0 auto;
   text-align: center;
-  background: #fff;
   padding: 10px;
 
   ul {
+    background: #fff;
+
     padding-left: 0;
     margin: 20px 0 0 0;
 
@@ -618,7 +628,7 @@ header {
     }
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 499px) {
     width: auto;
     margin: 0 10px;
 
@@ -673,7 +683,7 @@ header {
     color: #000;
     border-bottom: 1px dashed #000;
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 499px) {
     width: auto;
     margin: 0 10px;
     table.lista,
@@ -726,8 +736,11 @@ header {
 
 // 会社概要
 .company_wrap {
+  width: 1000px;
+  margin: 0 auto;
+
   .company_one {
-    width: 1000px;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
@@ -761,7 +774,7 @@ header {
   }
 
   .company_two {
-    width: 1000px;
+    width: 100%;
     margin: auto;
 
     table {
@@ -781,7 +794,7 @@ header {
       }
     }
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 499px) {
     width: auto;
     margin: 0 10px;
 
@@ -824,7 +837,7 @@ header {
   margin-top: 20px;
   text-align: center;
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 499px) {
     width: auto;
     iframe {
       width: auto;
@@ -834,11 +847,12 @@ header {
 
 // お問い合わせ
 .contact {
-  width: 700px;
+  width: 1000px;
   margin: 30px auto;
 
   form {
-    width: auto;
+    width: 700px;
+    margin: 0 auto;
 
     input,
     textarea,
@@ -883,7 +897,7 @@ header {
       }
     }
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 499px) {
     width: auto;
     margin: 0 10px;
 
@@ -970,7 +984,7 @@ footer {
     font-size: 13px;
   }
 
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 499px) {
     width: auto;
     height: auto;
     padding: 0 20px;
