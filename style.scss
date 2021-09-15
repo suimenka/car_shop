@@ -5,6 +5,7 @@ body {
   font-family: Verdana, Arial, Helvetica, "meirio", "メイリオ",
     "Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4", Osaka, "ＭＳ Ｐゴシック",
     sans-serif;
+  letter-spacing: 0.08em;
 
   margin: 0;
   color: #515151;
@@ -27,6 +28,10 @@ body {
     color: #fff;
     text-decoration: none;
   }
+}
+
+.wrap {
+  overflow: hidden;
 }
 
 // ヘッダー
@@ -369,57 +374,33 @@ header {
   margin: 80px auto 0;
   text-align: center;
 
-  .ribbon2 {
-    margin-top: 20px;
-    display: inline-block;
-    position: relative;
-    height: 60px;
-    line-height: 60px;
+  .osusume_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
     text-align: center;
-    padding: 7px 0;
-    font-size: 18px; /*フォントサイズ*/
-    background: #fa5050; /*背景色*/
-    color: #fff; /*文字色*/
-    box-sizing: border-box;
+    padding-top: 20px;
+  }
 
-    h3 {
-      margin: 0;
-      padding: 0 30px;
-      border-top: dashed 1px #fff; /*上の破線*/
-      border-bottom: dashed 1px #fff; /*下の破線*/
-      line-height: 46px;
-    }
+  .osusume_title::before,
+  .osusume_title::after {
+    content: "";
+    width: 3px;
+    height: 40px;
+    background-color: #515151;
+  }
 
-    &:before,
-    &:after {
-      position: absolute;
-      content: "";
-      width: 0px;
-      height: 0px;
-      z-index: 1;
-    }
-
-    &:before {
-      /*左端の山形*/
-      top: 0;
-      left: 0;
-      border-width: 30px 0px 30px 15px;
-      border-color: transparent transparent transparent #f6f6f6;
-      border-style: solid;
-    }
-
-    &:after {
-      /*右端の山形*/
-      top: 0;
-      right: 0;
-      border-width: 30px 15px 30px 0px;
-      border-color: transparent #f6f6f6 transparent transparent;
-      border-style: solid;
-    }
+  .osusume_title::before {
+    margin-right: 30px;
+    transform: rotate(-35deg);
+  }
+  .osusume_title::after {
+    margin-left: 30px;
+    transform: rotate(35deg);
   }
 
   ul {
-    list-style: none;
     display: flex;
     justify-content: space-between;
     padding-inline-start: 0;
@@ -432,6 +413,7 @@ header {
     border-radius: 8px;
     width: 30%;
     margin-bottom: 20px;
+    list-style: none;
   }
 
   img {
@@ -591,6 +573,7 @@ header {
 
     padding-left: 0;
     margin: 20px 0 0 0;
+    padding: 20px;
 
     li {
       display: flex;
@@ -619,7 +602,13 @@ header {
         h3 {
           border-bottom: 2px dotted #000;
           font-size: 20px;
+          text-align: center;
         }
+      }
+
+      .txt {
+        text-align: justify;
+        letter-spacing: 0.1em;
       }
 
       img {
@@ -634,6 +623,8 @@ header {
 
     ul {
       width: 100%;
+      padding: 0;
+
       li {
         flex-direction: column;
         .photo,
@@ -893,6 +884,7 @@ header {
       &:hover {
         cursor: pointer;
         background: #61c5bb;
+        color: #fff;
         transition-duration: 0.3s;
       }
     }
@@ -997,7 +989,7 @@ footer {
       margin-bottom: 15px;
 
       li {
-        padding: 0 20px 0 0;
+        padding: 0 10px 0 0;
       }
     }
 
