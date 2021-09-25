@@ -29,11 +29,40 @@ body .page-top {
   overflow: hidden;
 }
 
+main {
+  padding: 0 20px;
+}
+
+.tel_time {
+  width: 300px;
+  margin: 30px auto;
+  background: #fff;
+}
+
+.tel_time .tel {
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+
+.tel_time .time {
+  font-size: 10px;
+  padding: 5px 5px;
+  color: black;
+  text-align: center;
+  margin: 0;
+}
+
+.tel_time .time span {
+  color: red;
+}
+
 header {
   width: 100%;
   position: fixed;
   top: 0;
-  height: 70px;
+  height: 60px;
   margin: 0;
   background: #61c5bb;
   z-index: 20;
@@ -157,6 +186,20 @@ header nav ul a .titlee {
   font-weight: bold;
 }
 
+@media screen and (max-width: 1000px) {
+  header nav {
+    display: none;
+  }
+  header .header_wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .header_wrapper .header_title {
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: 499px) {
   header {
     padding-top: 0;
@@ -182,26 +225,6 @@ header nav ul a .titlee {
   }
   header .header_wrapper .header_r {
     display: none;
-  }
-  header .header_wrapper .tel_time {
-    margin: 30px;
-    background: #fff;
-  }
-  header .header_wrapper .tel_time .tel {
-    font-size: 25px;
-    font-weight: normal;
-    text-align: center;
-    margin: 0 0 5px 0;
-  }
-  header .header_wrapper .tel_time .time {
-    font-size: 10px;
-    padding: 5px 5px;
-    color: black;
-    text-align: center;
-    margin: 0;
-  }
-  header .header_wrapper .tel_time .time span {
-    color: red;
   }
   header .hamburger-menu {
     display: block;
@@ -336,7 +359,7 @@ header nav ul a .titlee {
   /*メニューを画面内へ*/
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 899px) {
   .hamburger-menu {
     display: none;
   }
@@ -376,7 +399,7 @@ header nav ul a .titlee {
 }
 
 .osusume {
-  width: 1000px;
+  max-width: 1000px;
   margin: 80px auto 0;
   text-align: center;
 }
@@ -449,6 +472,7 @@ header nav ul a .titlee {
 .osusume .car_content h3 {
   font-weight: normal;
   letter-spacing: 1px;
+  font-size: 18px;
 }
 
 .osusume .car_content p {
@@ -465,7 +489,7 @@ header nav ul a .titlee {
 
 .osusume .car_content .mitumori a {
   display: inline-block;
-  font-size: 15px;
+  font-size: 14px;
   text-align: right;
   text-decoration: none;
   border-bottom: dashed 1px black;
@@ -506,14 +530,8 @@ header nav ul a .titlee {
   }
 }
 
-@media screen and (min-width: 600px) {
-  .osusume .ribbon2 h3.mb_osusume {
-    display: none;
-  }
-}
-
 .new {
-  width: 1000px;
+  max-width: 1000px;
   height: auto;
   margin: 0 auto;
   background: #fff;
@@ -588,7 +606,7 @@ header nav ul a .titlee {
 }
 
 .joycal {
-  width: 980px;
+  max-width: 980px;
   margin: 0 auto;
   text-align: center;
   padding: 10px;
@@ -647,6 +665,10 @@ header nav ul a .titlee {
   letter-spacing: 0.1em;
 }
 
+.joycal ul li .txt:nth-child(odd), .joycal ul li .txt:nth-child(even) {
+  padding: 0 10px;
+}
+
 .joycal ul li img {
   width: 80%;
 }
@@ -654,7 +676,6 @@ header nav ul a .titlee {
 @media screen and (max-width: 499px) {
   .joycal {
     width: auto;
-    margin: 0 10px;
   }
   .joycal ul {
     width: 100%;
@@ -666,15 +687,15 @@ header nav ul a .titlee {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .joycal ul li .photo,
-  .joycal ul li .txt {
-    width: auto;
-  }
   .joycal ul li:nth-child(odd) {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .joycal ul li .photo,
+  .joycal ul li .txt {
+    width: auto;
   }
   .joycal ul img {
     width: auto;
@@ -682,7 +703,7 @@ header nav ul a .titlee {
 }
 
 .mainte {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -759,13 +780,12 @@ header nav ul a .titlee {
 }
 
 .company_wrap {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .company_wrap .company_one {
   width: 100%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -783,12 +803,14 @@ header nav ul a .titlee {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: calc(100% / 3);
 }
 
 .company_wrap .company_one .main_image img {
-  width: 310px;
-  height: 230px;
+  width: 95%;
   border-radius: 10px;
   opacity: 0.8;
 }
@@ -796,7 +818,7 @@ header nav ul a .titlee {
 .company_wrap .company_one .main_image .inner {
   width: auto;
   height: 15px;
-  padding: 10px;
+  padding: 10px 0;
   text-align: center;
 }
 
@@ -804,6 +826,12 @@ header nav ul a .titlee {
   margin: 0;
   font-size: 15px;
   line-height: 15px;
+}
+
+@media (max-width: 1000px) and (min-width: 600px) {
+  .company_wrap .company_one .main_image .inner p {
+    font-size: 11px;
+  }
 }
 
 .company_wrap .company_two {
@@ -843,6 +871,7 @@ header nav ul a .titlee {
             justify-content: flex-start;
   }
   .company_wrap .company_one .main_image {
+    width: 100%;
     margin-right: 0;
   }
   .company_wrap .company_one .main_image img {
@@ -866,21 +895,19 @@ header nav ul a .titlee {
 }
 
 .map {
-  margin-top: 20px;
+  max-width: 1000px;
+  margin: 20px auto 0;
   text-align: center;
 }
 
 @media screen and (max-width: 499px) {
   .map {
-    width: auto;
-  }
-  .map iframe {
-    width: auto;
+    margin: 20px 10px 0;
   }
 }
 
 .contact {
-  width: 1000px;
+  max-width: 1000px;
   margin: 30px auto;
 }
 
@@ -955,7 +982,7 @@ header nav ul a .titlee {
 }
 
 footer {
-  width: 1000px;
+  max-width: 1000px;
   height: 80px;
   margin: 20px auto;
 }

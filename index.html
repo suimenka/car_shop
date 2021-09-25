@@ -10,34 +10,36 @@
       rel="stylesheet"
     />
     <script type="text/javascript">
-      $(function() {
-          var pageTop = $('.page-top');
-          pageTop.hide();
-          $(window).scroll(function () {
-              if ($(this).scrollTop() > 600) {
-                  pageTop.fadeIn();
-              } else {
-                  pageTop.fadeOut();
-              }
-          });
-          pageTop.click(function () {
-              $('body, html').animate({scrollTop:0}, 500, 'swing');
-              return false;
-          });
+      $(function () {
+        var pageTop = $(".page-top");
+        pageTop.hide();
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 600) {
+            pageTop.fadeIn();
+          } else {
+            pageTop.fadeOut();
+          }
+        });
+        pageTop.click(function () {
+          $("body, html").animate({ scrollTop: 0 }, 500, "swing");
+          return false;
+        });
       });
-      </script>
+    </script>
   </head>
   <body>
     <div class="wrap">
-    <!-- <a href="#" class="page-top">PAGE TOP ▲</a> -->
+      <a href="#" class="page-top">PAGE TOP ▲</a>
       <header>
         <div class="header_wrapper">
           <div class="header_title">
-            <a href=""><h1>株式会社 鈴木商会<span>ジョイカル美濃加茂店</span></h1></a>
+            <a href=""
+              ><h1>株式会社 鈴木商会<span>ジョイカル美濃加茂店</span></h1></a
+            >
           </div>
 
           <div class="hamburger-menu">
-            <input type="checkbox" id="menu-btn-check">
+            <input type="checkbox" id="menu-btn-check" />
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
             <div class="menu-content">
               <ul>
@@ -95,87 +97,92 @@
         </div>
       </header>
 
-      <div class="osusume">
+      <main>
+        <section class="osusume">
           <h3 class="osusume_title">今月のオススメ！</h3>
 
+          <ul>
+            <li>
+              <img src="img/osusume1.jpg" alt="" />
+              <div class="car_content">
+                <h3>スズキ / ハスラー</h3>
+                <p class="hm">ハーフマックス価格<br />〇〇〇，〇〇〇円(税込)</p>
+                <p class="seven_max">
+                  7MAXなら…月々1万円(税別)<br />車検・税金・オイル交換込!
+                </p>
+                <p class="mitumori">
+                  <a href="#contact"
+                    ><i class="fas fa-car"></i> お見積りはこちらから</a
+                  >
+                </p>
+              </div>
+            </li>
 
-        <ul>
-          <li>
-            <img src="img/osusume1.jpg" alt="" />
-            <div class="car_content">
-              <h3>スズキ / ハスラー</h3>
-              <p class="hm">ハーフマックス価格<br />〇〇〇，〇〇〇円(税込)</p>
-              <p class="seven_max">
-                7MAXなら…月々1万円(税別)<br />車検・税金・オイル交換込!
-              </p>
-              <p class="mitumori">
-                <a href="#contact"><i class="fas fa-car"></i> お見積りはこちらから</a>
-              </p>
+            <li>
+              <img src="img/osusume2.jpg" alt="" />
+              <div class="car_content">
+                <h3>ダイハツ / タント</h3>
+                <p class="hm">ハーフマックス価格<br />〇〇〇，〇〇〇円(税込)</p>
+                <p class="seven_max">
+                  7MAXなら…月々1万円(税別)<br />車検・税金・オイル交換込!
+                </p>
+                <p class="mitumori">
+                  <a href="#contact"
+                    ><i class="fas fa-car"></i> お見積りはこちらから</a
+                  >
+                </p>
+              </div>
+            </li>
+
+            <li>
+              <img src="img/osusume3.jpg" alt="" />
+              <div class="car_content">
+                <h3>スズキ / スペーシア</h3>
+                <p class="hm">ハーフマックス価格<br />〇〇〇，〇〇〇円(税込)</p>
+                <p class="seven_max">
+                  7MAXなら…月々1万円(税別)<br />車検・税金・オイル交換込!
+                </p>
+                <p class="mitumori">
+                  <a href="#contact"
+                    ><i class="fas fa-car"></i> お見積りはこちらから</a
+                  >
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section class="new">
+          <h2 class="new_title"><span>新着情報</span></h2>
+          <dl>
+            <div class="kizi">
+              <dt>2021年05月1日</dt>
+              <dd>今月のオススメを更新しました。</dd>
             </div>
-          </li>
 
-          <li>
-            <img src="img/osusume2.jpg" alt="" />
-            <div class="car_content">
-              <h3>ダイハツ / タント</h3>
-              <p class="hm">ハーフマックス価格<br />〇〇〇，〇〇〇円(税込)</p>
-              <p class="seven_max">
-                7MAXなら…月々1万円(税別)<br />車検・税金・オイル交換込!
-              </p>
-              <p class="mitumori">
-                <a href="#contact"><i class="fas fa-car"></i> お見積りはこちらから</a>
-              </p>
+            <div class="kizi">
+              <dt>2021年04月29日</dt>
+              <dd>
+                【GW中の営業日のお知らせ】5月3日～5日の間は休業とさせていただきます。何卒よろしくお願い致します。
+              </dd>
             </div>
-          </li>
 
-          <li>
-            <img src="img/osusume3.jpg" alt="" />
-            <div class="car_content">
-            <h3>スズキ / スペーシア</h3>
-              <p class="hm">ハーフマックス価格<br />〇〇〇，〇〇〇円(税込)</p>
-              <p class="seven_max">
-                7MAXなら…月々1万円(税別)<br />車検・税金・オイル交換込!
-              </p>
-              <p class="mitumori">
-                <a href="#contact"><i class="fas fa-car"></i> お見積りはこちらから</a>
-              </p>
+            <div class="kizi">
+              <dt>2021年04月22日</dt>
+              <dd>ホームページをリニューアルしました。</dd>
             </div>
-          </li>
-        </ul>
-      </div>
+          </dl>
+        </section>
 
-      <div class="new">
-        <h2 class="new_title"><span>新着情報</span></h2>
-        <dl>
-          <div class="kizi">
-            <dt>2021年05月1日</dt>
-            <dd>
-              今月のオススメを更新しました。  
-            </dd>
-          </div>
-
-          <div class="kizi">
-            <dt>2021年04月29日</dt>
-            <dd>
-              【GW中の営業日のお知らせ】5月3日～5日の間は休業とさせていただきます。何卒よろしくお願い致します。
-            </dd>
-          </div>
-
-          <div class="kizi">
-            <dt>2021年04月22日</dt>
-            <dd>ホームページをリニューアルしました。</dd>
-          </div>
-        </dl>
-      </div>
-
-      
-        <div class="joycal">
+        <section class="joycal">
           <div class="sub_title" id="sale">
             <h2>車 両 販 売</h2>
           </div>
           <ul>
             <li>
-              <div class="photo"><img src="img/logo_joycal.svg" alt="Photo"></div>
+              <div class="photo">
+                <img src="img/logo_joycal.svg" alt="Photo" />
+              </div>
               <div class="txt">
                 <h3>鈴木商会はジョイカル加盟店です。</h3>
                 <p>
@@ -184,7 +191,7 @@
               </div>
             </li>
             <li>
-              <div class="photo"><img src="img/hm.png" alt="Photo"></div>
+              <div class="photo"><img src="img/hm.png" alt="Photo" /></div>
               <div class="txt">
                 <h3>ローンで買うならハーフマックス！</h3>
                 <p>
@@ -193,7 +200,7 @@
               </div>
             </li>
             <li>
-              <div class="photo"><img src="img/7m.png" alt="Photo"></div>
+              <div class="photo"><img src="img/7m.png" alt="Photo" /></div>
               <div class="txt">
                 <h3>リースなら7年間定額のセブンマックス！</h3>
                 <p>
@@ -202,69 +209,66 @@
               </div>
             </li>
           </ul>
-        </div>
+        </section>
 
-
-
-      
-      <div class="mainte">
-        <div class="sub_title" id="mainte">
-          <h2>整 備 料 金 表</h2>
-        </div>
-        <table class="lista">
-          <thead>
+        <section class="mainte">
+          <div class="sub_title" id="mainte">
+            <h2>整 備 料 金 表</h2>
+          </div>
+          <table class="lista">
+            <thead>
+              <tr>
+                <th>内容</th>
+                <th>単位</th>
+                <th>料金(税込)</th>
+              </tr>
+            </thead>
             <tr>
-              <th>内容</th>
-              <th>単位</th>
-              <th>料金(税込)</th>
+              <td>ブレーキランプ交換<br />キーレス電池交換</td>
+              <td>1個</td>
+              <td>550円</td>
             </tr>
-          </thead>
-          <tr>
-            <td>ブレーキランプ交換<br />キーレス電池交換</td>
-            <td>1個</td>
-            <td>550円</td>
-          </tr>
-          <tr>
-            <td>ワイパーゴム交換</td>
-            <td>1本</td>
-            <td>1,100円</td>
-          </tr>
-          <tr>
-            <td>オイル交換</td>
-            <td>1L</td>
-            <td>1,100円〜</td>
-          </tr>
-          <tr>
-            <td>オイルエレメント交換</td>
-            <td>1個</td>
-            <td>2,200円〜</td>
-          </tr>
-          <tr>
-            <td>タイヤ交換</td>
-            <td>4本</td>
-            <td>3,300円〜</td>
-          </tr>
-          <tr>
-            <td>タイヤ預かり</td>
-            <td>4本</td>
-            <td>1,100円</td>
-          </tr>
-          <tr>
-            <td>バッテリー充電</td>
-            <td>-</td>
-            <td>2,200円</td>
-          </tr>
-          <tr>
-            <td>バッテリー交換</td>
-            <td>40B19L</td>
-            <td>7,700円</td>
-          </tr>
-        </table>
+            <tr>
+              <td>ワイパーゴム交換</td>
+              <td>1本</td>
+              <td>1,100円</td>
+            </tr>
+            <tr>
+              <td>オイル交換</td>
+              <td>1L</td>
+              <td>1,100円〜</td>
+            </tr>
+            <tr>
+              <td>オイルエレメント交換</td>
+              <td>1個</td>
+              <td>2,200円〜</td>
+            </tr>
+            <tr>
+              <td>タイヤ交換</td>
+              <td>4本</td>
+              <td>3,300円〜</td>
+            </tr>
+            <tr>
+              <td>タイヤ預かり</td>
+              <td>4本</td>
+              <td>1,100円</td>
+            </tr>
+            <tr>
+              <td>バッテリー充電</td>
+              <td>-</td>
+              <td>2,200円</td>
+            </tr>
+            <tr>
+              <td>バッテリー交換</td>
+              <td>40B19L</td>
+              <td>7,700円</td>
+            </tr>
+          </table>
 
-        <div class="sub_title">
-          <h2>点 検・車 検</h2>
-        </div>
-          <table class="listb">  
+          <div class="sub_title">
+            <h2>点 検・車 検</h2>
+          </div>
+          <table class="listb">
             <thead>
               <tr>
                 <th>内容</th>
@@ -275,13 +279,13 @@
             <tr>
               <td>6ヶ月点検</td>
               <td>約20分</td>
-              <td>無料<br>※当社にてご購入の新車のみ</td>
+              <td>無料<br />※当社にてご購入の新車のみ</td>
             </tr>
             <tr>
               <td>12ヶ月点検</td>
               <td>約3時間</td>
               <td>
-                7,700円〜(軽)<br>8,800円〜(小型)<br>9,900円〜(3ナンバー)<br>※上記に加え、別途整備代が必要となります
+                7,700円〜(軽)<br />8,800円〜(小型)<br />9,900円〜(3ナンバー)<br />※上記に加え、別途整備代が必要となります
               </td>
             </tr>
             <tr>
@@ -293,165 +297,162 @@
               </td>
             </tr>
           </table>
-        </div>
+        </section>
 
-        
-        <div class="company_wrap">
+        <section class="company_wrap">
           <div class="sub_title" id="company">
             <h2>会 社 概 要</h2>
           </div>
-        <div class="company_one">
-          <div class="main_image">
-            <div class="inner">
-              <p>
-                <i class="fas fa-check-circle"></i> 創業66年！美濃加茂市役所すぐ側です
-              </p>
-            </div>
-            <img src="img/main.png" alt="メイン画像" />
-          </div>
-  
-          <div class="main_image">
-            <div class="inner">
-              <p>
-                <i class="fas fa-check-circle"></i> 一台一台、大切に整備しています
-              </p>
-            </div>
-            <img src="img/hus.jpg" alt="メイン画像" />
-          </div>
-  
-          <div class="main_image">
-            <div class="inner">
-              <p>
-                <i class="fas fa-check-circle"></i>
-                展示場には珍しい中古車も時々出現！
-              </p>
-            </div>
-            <img src="img/jimny.jpg" alt="メイン画像" />
-          </div>
-        </div>
-
-        <div class="company_two">
-          <table>
-            <tr>
-              <th>会社名</th>
-              <td>株式会社 鈴木商会</td>
-            </tr>
-            <tr>
-              <th>代表者名</th>
-              <td>鈴木 隆</td>
-            </tr>
-            <tr>
-              <th>設立年月</th>
-              <td>昭和30年 5月</td>
-            </tr>
-            <tr>
-              <th>資本金</th>
-              <td>1,000万円</td>
-            </tr>
-            <tr>
-              <th>事業内容</th>
-              <td>自動車整備・車検・車両販売・任意保険</td>
-            </tr>
-            <tr>
-              <th>所在地</th>
-              <td>
-                〒505-0041<br />
-                岐阜県 美濃加茂市 太田町 1885-7
-              </td>
-            </tr>
-            <tr>
-              <th>TEL</th>
-              <td>0574-25-2368</td>
-            </tr>
-            <tr>
-              <th>FAX</th>
-              <td>0574-25-2564</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13002.065432637377!2d137.0152!3d35.442009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a6b3a24d91850b3!2z77yI5qCq77yJ6Yi05pyo5ZWG5Lya!5e0!3m2!1sja!2sjp!4v1618661235897!5m2!1sja!2sjp"
-              width="1000"
-              height="250"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-            ></iframe>
-          </div>
-
-          
-          <div class="contact">
-            <div class="sub_title" id="contact">
-              <h2>お 問 い 合 わ せ</h2>
-            </div>
-            <form
-              name="contact"
-              method="post"
-              action=""
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-            >
-              <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="contact" />
-
-              <dl>
-                <dt><label for="name">お名前</label></dt>
-                <dd><input type="text" id="name" name="name" required /></dd>
-                <dt><label for="email">メールアドレス</label></dt>
-                <dd><input type="email" id="email" name="email" required /></dd>
-                <dt><label>お問い合わせの種類</label></dt>
-                <dd class="selectbox">
-                  <select name="item">
-                    <option value="">お問い合わせの種類をご選択ください</option>
-                    <option value="購入">購入</option>
-                    <option value="整備・点検">整備・点検</option>
-                    <option value="その他">その他</option>
-                  </select>
-                </dd>
-                <dt><label>メッセージ</label></dt>
-                <dd>
-                  <textarea
-                    name="message"
-                    cols="40"
-                    rows="10"
-                    required
-                  ></textarea>
-                </dd>
-              </dl>
-              <div class="btn">
-                <button type="submit" class="submit-btn">送　信</button>
+          <div class="company_one">
+            <div class="main_image">
+              <div class="inner">
+                <p>
+                  <i class="fas fa-check-circle"></i>
+                  創業66年！美濃加茂市役所すぐ側です
+                </p>
               </div>
-            </form>
+              <img src="img/main.png" alt="イメージ写真" />
+            </div>
+
+            <div class="main_image">
+              <div class="inner">
+                <p>
+                  <i class="fas fa-check-circle"></i>
+                  一台一台、大切に整備しています
+                </p>
+              </div>
+              <img src="img/hus.jpg" alt="イメージ写真" />
+            </div>
+
+            <div class="main_image">
+              <div class="inner">
+                <p>
+                  <i class="fas fa-check-circle"></i>
+                  ちょっと珍しい中古車があることも！
+                </p>
+              </div>
+              <img src="img/jimny.jpg" alt="イメージ写真" />
+            </div>
           </div>
+
+          <div class="company_two">
+            <table>
+              <tr>
+                <th>会社名</th>
+                <td>株式会社 鈴木商会</td>
+              </tr>
+              <tr>
+                <th>代表者名</th>
+                <td>鈴木 隆</td>
+              </tr>
+              <tr>
+                <th>設立年月</th>
+                <td>昭和30年 5月</td>
+              </tr>
+              <tr>
+                <th>資本金</th>
+                <td>1,000万円</td>
+              </tr>
+              <tr>
+                <th>事業内容</th>
+                <td>自動車整備・車検・車両販売・任意保険</td>
+              </tr>
+              <tr>
+                <th>所在地</th>
+                <td>
+                  〒505-0041<br />
+                  岐阜県 美濃加茂市 太田町 1885-7
+                </td>
+              </tr>
+              <tr>
+                <th>TEL</th>
+                <td>0574-25-2368</td>
+              </tr>
+              <tr>
+                <th>FAX</th>
+                <td>0574-25-2564</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13002.065432637377!2d137.0152!3d35.442009!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2a6b3a24d91850b3!2z77yI5qCq77yJ6Yi05pyo5ZWG5Lya!5e0!3m2!1sja!2sjp!4v1618661235897!5m2!1sja!2sjp"
+            width="100%"
+            height="250"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
-      </div>
-    </div>
 
-    <footer>
-      <ul>
-        <li><a href="#">トップページ</a></li>
-        <li><a href="#sale">車両販売</a></li>
-        <li><a href="#mainte">整備・点検</a></li>
-        <li><a href="#company">会社概要</a></li>
-        <li><a href="#contact">お問い合わせ</a></li>
-      </ul>
+        <section class="contact">
+          <div class="sub_title" id="contact">
+            <h2>お 問 い 合 わ せ</h2>
+          </div>
+          <form
+            name="contact"
+            method="post"
+            action=""
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
 
-      <div class="name-add">
-        <p class="address">
-          <span class="name"><strong>株式会社 鈴木商会</strong></span>
-          <span class="add"> 岐阜県美濃加茂市太田町 1885−7</span>
-          <span class="tel"> TEL:0574-25-2368</span>
+            <dl>
+              <dt><label for="name">お名前</label></dt>
+              <dd><input type="text" id="name" name="name" required /></dd>
+              <dt><label for="email">メールアドレス</label></dt>
+              <dd><input type="email" id="email" name="email" required /></dd>
+              <dt><label>お問い合わせの種類</label></dt>
+              <dd class="selectbox">
+                <select name="item">
+                  <option value="">お問い合わせの種類をご選択ください</option>
+                  <option value="購入">購入</option>
+                  <option value="整備・点検">整備・点検</option>
+                  <option value="その他">その他</option>
+                </select>
+              </dd>
+              <dt><label>メッセージ</label></dt>
+              <dd>
+                <textarea
+                  name="message"
+                  cols="40"
+                  rows="10"
+                  required
+                ></textarea>
+              </dd>
+            </dl>
+            <div class="btn">
+              <button type="submit" class="submit-btn">送　信</button>
+            </div>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <ul>
+          <li><a href="#">トップページ</a></li>
+          <li><a href="#sale">車両販売</a></li>
+          <li><a href="#mainte">整備・点検</a></li>
+          <li><a href="#company">会社概要</a></li>
+          <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+
+        <div class="name-add">
+          <p class="address">
+            <span class="name"><strong>株式会社 鈴木商会</strong></span>
+            <span class="add"> 岐阜県美濃加茂市太田町 1885−7</span>
+            <span class="tel"> TEL:0574-25-2368</span>
+          </p>
+        </div>
+
+        <p class="copy">
+          Copyright 2021 Suzuki Shokai CO.,LTD All Rights Reserved.
         </p>
-      </div>
-
-      <p class="copy">
-        Copyright 2021 Suzuki Shokai CO.,LTD All Rights Reserved.
-      </p>
-    </footer>
-  </div>
+      </footer>
+    </div>
   </body>
 </html>
